@@ -1,10 +1,13 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
 	<title>Happy Birthday</title>
-	
+
 	<link rel="icon" href="images/greenheart.png">
-	
+
 	<style type="text/css">
 
 		body {
@@ -31,6 +34,7 @@
 			letter-spacing: 4px;
 			text-decoration: none;
 			transition: 0.2s;
+			z-index: 1000;
 		}
 
 		#bdg:hover {
@@ -100,8 +104,96 @@
 			transition-delay: 0.75s;
 		}
 
+		section {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+
+		section img {
+			width: 100px;
+		}
+		
+		.hearts {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			z-index: 12;
+		}
+
+		.hearts div {
+			position: absolute;
+			display: block;
+			transform: scale(0.2);
+		}
+
+		.hearts div:nth-child(1){
+			left: 20%;
+			animation: animateX 5s linear infinite;
+			animation-delay: -7s;
+		}
+
+		.hearts div:nth-child(2){
+			left: 50%;
+			animation: animateX 10s linear infinite;
+			animation-delay: -5s;
+		}
+
+		.hearts div:nth-child(3){
+			left: 70%;
+			animation: animateX 15s linear infinite;
+		}
+
+		.hearts div:nth-child(4){
+			left: 10%;
+			animation: animateX 5s linear infinite;
+			animation-delay: -6s;
+		}
+
+		.hearts div:nth-child(5){
+			left: 85%;
+			animation: animateX 8s linear infinite;
+			animation-delay: -10s;
+		}
+
+		.hearts div:nth-child(6){
+			left: 78%;
+			animation: animateX 12s linear infinite;
+			animation-delay: -1s;
+		}
+
+		.hearts div:nth-child(7){
+			left: 15%;
+			animation: animateX 4s linear infinite;
+		}
+
+		.hearts div:nth-child(8){
+			left: 60%;
+			animation: animateX 9s linear infinite;
+		}
+
+		@keyframes animateX {
+			0% {
+				top: -10%;
+				opacity: 0;
+			}
+
+			10% {
+				opacity: 1;
+			}
+
+
+			100% {
+				top: 110%;
+			}
+		}
+
 	</style>
+
 </head>
+
 <body>
 
 	<a href="happy_birthday.html" target="_blank" id="bdg">
@@ -112,5 +204,19 @@
 		Happy Birthday!
 	</a>
 
+	<section>
+		<div class="hearts">
+			<div><img src="images/greenheart.png"></div>
+			<div><img src="images/greenheart.png"></div>
+			<div><img src="images/greenheart.png"></div>
+			<div><img src="images/greenheart.png"></div>
+			<div><img src="images/greenheart.png"></div>
+			<div><img src="images/greenheart.png"></div>
+			<div><img src="images/greenheart.png"></div>
+			<div><img src="images/greenheart.png"></div>
+		</div>
+	</section>
+
 </body>
+
 </html>
