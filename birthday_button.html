@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: verdana;
+			background: #0e1700;
+		}
+
+		#bdg {
+			position: absolute;
+			display: inline-block;
+			padding: 15px 30px;
+			left: 50%;
+			transform: translateY(-50%) translateX(-50%);
+			top: 50%;
+			z-index: 1;
+			transition: 0.2s;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 24px;
+			overflow: hidden;
+			color: #9cff00;
+			letter-spacing: 4px;
+			text-decoration: none;
+			transition: 0.2s;
+		}
+
+		#bdg:hover {
+			color: #2f4014;
+			background: #9cff00;
+			box-shadow: 0 0 10px #9cff00, 0 0 40px #9cff00, 0 0 80px #9cff00;
+			transition-delay: 1s;
+		}
+
+		#bdg span {
+			position: absolute;
+			display: block;
+		}
+
+		#bdg span:nth-child(1) {
+			top: 0;
+			left: -100%;
+			width: 100%;
+			height: 2px;
+			background: linear-gradient(90deg, transparent, #9cff00);
+		}
+
+		#bdg:hover span:nth-child(1) {
+			left: 100%;
+			transition: 1s;
+		}
+
+		#bdg span:nth-child(2) {
+			top: -100%;
+			right: 0%;
+			height: 100%;
+			width: 2px;
+			background: linear-gradient(180deg, transparent, #9cff00);
+		}
+
+		#bdg:hover span:nth-child(2) {
+			top: 100%;
+			transition: 1s;
+			transition-delay: 0.25s;
+		}
+
+		#bdg span:nth-child(3) {
+			bottom: 0;
+			right: -100%;
+			width: 100%;
+			height: 2px;
+			background: linear-gradient(270deg, transparent, #9cff00);
+		}
+
+		#bdg:hover span:nth-child(3) {
+			right: 100%;
+			transition: 1s;
+			transition-delay: 0.5s;
+		}
+
+		#bdg span:nth-child(4) {
+			bottom: -100%;
+			left: 0%;
+			height: 100%;
+			width: 2px;
+			background: linear-gradient(360deg, transparent, #9cff00);
+		}
+
+		#bdg:hover span:nth-child(4) {
+			bottom: 100%;
+			transition: 1s;
+			transition-delay: 0.75s;
+		}
+
+	</style>
+</head>
+<body>
+
+	<a href="file:///Users/stella/Desktop/Web/happy_birthday.html" target="_blank" id="bdg">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		Happy Birthday!
+	</a>
+
+</body>
+</html>
